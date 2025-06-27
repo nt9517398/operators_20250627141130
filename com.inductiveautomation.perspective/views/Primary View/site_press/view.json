@@ -1,0 +1,826 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 1065,
+      "width": 1690
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "spacing1"
+            },
+            "position": {
+              "basis": "52px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "267px"
+            },
+            "props": {
+              "text": "PLY2 PRESS",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 40,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "spacing"
+            },
+            "position": {
+              "basis": "20px"
+            },
+            "type": "ia.display.label"
+          }
+        ],
+        "meta": {
+          "name": "header"
+        },
+        "position": {
+          "basis": "58px",
+          "shrink": 0
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "18px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "325px"
+                },
+                "props": {
+                  "text": "TOTAL SHEETS",
+                  "textStyle": {
+                    "fontSize": 15,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "basis": "381px",
+                  "grow": 1
+                },
+                "props": {
+                  "text": "RECIPE NAME",
+                  "textStyle": {
+                    "fontSize": 15,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "header"
+            },
+            "position": {
+              "basis": "82px"
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#004B3A",
+                "borderColor": "#FFFFFF",
+                "borderStyle": "solid",
+                "borderWidth": 0.5
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "325px"
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "parameters": {
+                          "date_from": "{..../FlexContainer_2/DateFrom.props.value}",
+                          "date_to": "{..../FlexContainer_2/DateTo.props.value}"
+                        },
+                        "polling": {
+                          "enabled": true,
+                          "rate": "60"
+                        },
+                        "queryPath": "site_press/site_press_total_sheets",
+                        "returnFormat": "scalar"
+                      },
+                      "type": "query"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2B2B2B",
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "fontSize": 25,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_3"
+                },
+                "position": {
+                  "basis": "387.1px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_press/HMI_RecipeActual/RecipeName/STRING"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#2B2B2B",
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "fontSize": 25,
+                    "textAlign": "center"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "data"
+            },
+            "position": {
+              "basis": "118px"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "current_data"
+        },
+        "position": {
+          "basis": "70px"
+        },
+        "props": {
+          "alignContent": "space-around",
+          "direction": "column",
+          "justify": "space-evenly",
+          "style": {
+            "borderStyle": "double",
+            "borderWidth": 0.1
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "meta": {
+          "name": "FlexContainer_1"
+        },
+        "position": {
+          "basis": "17px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "DateFrom"
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "expression": "if (dateExtract(now(0),\"hour\")\u003e0,if (dateExtract(now(0),\"hour\")\u003c 6,settime((dateArithmetic(now(0), -1, \"days\")),06,00,00),settime(now(0),06,00,00)),0)"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "formattedValue": "Apr 27, 2023 6:00 AM",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "DateTo"
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "expression": "now(1000)"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "formattedValue": "Apr 27, 2023 7:44 AM",
+              "inputProps": {
+                "style": {
+                  "backgroundColor": "#004B3A",
+                  "borderStyle": "double"
+                }
+              },
+              "style": {
+                "borderStyle": "double"
+              }
+            },
+            "type": "ia.input.date-time-input"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_2"
+        },
+        "position": {
+          "basis": "27px"
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "FlexContainer"
+            },
+            "position": {
+              "basis": "8px"
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "-50px"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#004B3A",
+                    "fontFamily": "monospace",
+                    "fontSize": 30,
+                    "textAlign": "center"
+                  },
+                  "text": "PACKS HISTORY",
+                  "textStyle": {
+                    "fontFamily": "Merriweather",
+                    "fontWeight": "900",
+                    "textOverflow": "clip",
+                    "textTransform": "uppercase"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "events": {
+                  "component": {
+                    "onEditCellCommit": {
+                      "config": {
+                        "script": "self.props.data \u003d system.dataset.setValue(self.props.data, event.row , event.column,valueToSet)\nupdate \u003d \"UPDATE site_press SET pack_count \u003d ? WHERE t_stamp \u003d ? and recipe_name\u003d?\"\nsystem.db.runPrepUpdate(update, args)"
+                      },
+                      "scope": "G",
+                      "type": "script"
+                    }
+                  }
+                },
+                "meta": {
+                  "name": "Table"
+                },
+                "position": {
+                  "basis": "542.8px",
+                  "grow": 1
+                },
+                "propConfig": {
+                  "props.data": {
+                    "binding": {
+                      "config": {
+                        "parameters": {
+                          "date_from": "{..../FlexContainer_2/DateFrom.props.value}",
+                          "date_to": "{..../FlexContainer_2/DateTo.props.value}"
+                        },
+                        "queryPath": "site_press/site_press_packs",
+                        "returnFormat": "dataset"
+                      },
+                      "type": "query"
+                    }
+                  }
+                },
+                "props": {
+                  "columns": [
+                    {
+                      "align": "center",
+                      "boolean": "checkbox",
+                      "dateFormat": "YYYY-MM-DD HH:mm:ss",
+                      "editable": false,
+                      "field": "t_stamp",
+                      "footer": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "header": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "justify": "center",
+                      "number": "value",
+                      "numberFormat": "0,0.##",
+                      "progressBar": {
+                        "bar": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "max": 100,
+                        "min": 0,
+                        "track": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "value": {
+                          "enabled": true,
+                          "format": "0,0.##",
+                          "justify": "center",
+                          "style": {
+                            "classes": ""
+                          }
+                        }
+                      },
+                      "render": "auto",
+                      "resizable": true,
+                      "sort": "none",
+                      "sortable": true,
+                      "strictWidth": false,
+                      "style": {
+                        "classes": "",
+                        "fontSize": 25
+                      },
+                      "toggleSwitch": {
+                        "color": {
+                          "selected": "",
+                          "unselected": ""
+                        }
+                      },
+                      "viewParams": {},
+                      "viewPath": "",
+                      "visible": true,
+                      "width": ""
+                    },
+                    {
+                      "align": "center",
+                      "boolean": "checkbox",
+                      "dateFormat": "MM/DD/YYYY HH:mm:ss",
+                      "editable": false,
+                      "field": "pack_count",
+                      "footer": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "header": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "justify": "center",
+                      "number": "value",
+                      "numberFormat": "0,0.##",
+                      "progressBar": {
+                        "bar": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "max": 100,
+                        "min": 0,
+                        "track": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "value": {
+                          "enabled": true,
+                          "format": "0,0.##",
+                          "justify": "center",
+                          "style": {
+                            "classes": ""
+                          }
+                        }
+                      },
+                      "render": "auto",
+                      "resizable": true,
+                      "sort": "none",
+                      "sortable": true,
+                      "strictWidth": false,
+                      "style": {
+                        "classes": "",
+                        "fontSize": 25
+                      },
+                      "toggleSwitch": {
+                        "color": {
+                          "selected": "",
+                          "unselected": ""
+                        }
+                      },
+                      "viewParams": {},
+                      "viewPath": "",
+                      "visible": true,
+                      "width": ""
+                    },
+                    {
+                      "align": "center",
+                      "boolean": "checkbox",
+                      "dateFormat": "MM/DD/YYYY",
+                      "editable": false,
+                      "field": "recipe_name",
+                      "footer": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "header": {
+                        "align": "center",
+                        "justify": "left",
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": ""
+                      },
+                      "justify": "auto",
+                      "number": "value",
+                      "numberFormat": "0,0.##",
+                      "progressBar": {
+                        "bar": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "max": 100,
+                        "min": 0,
+                        "track": {
+                          "color": "",
+                          "style": {
+                            "classes": ""
+                          }
+                        },
+                        "value": {
+                          "enabled": true,
+                          "format": "0,0.##",
+                          "justify": "center",
+                          "style": {
+                            "classes": ""
+                          }
+                        }
+                      },
+                      "render": "auto",
+                      "resizable": true,
+                      "sort": "none",
+                      "sortable": true,
+                      "strictWidth": false,
+                      "style": {
+                        "classes": "",
+                        "fontSize": 25
+                      },
+                      "toggleSwitch": {
+                        "color": {
+                          "selected": "",
+                          "unselected": ""
+                        }
+                      },
+                      "viewParams": {},
+                      "viewPath": "",
+                      "visible": true,
+                      "width": ""
+                    }
+                  ],
+                  "enableHeader": false,
+                  "enableHeaderGroups": true,
+                  "headerGroupStyle": {
+                    "backgroundColor": "#004B3A"
+                  },
+                  "headerGroups": [
+                    [
+                      {
+                        "align": "center",
+                        "justify": "center",
+                        "span": 1,
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": "UNLOAD TIME STAMP\n"
+                      },
+                      {
+                        "align": "center",
+                        "justify": "center",
+                        "span": 1,
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": "PACK SHEET COUNT\n\n"
+                      },
+                      {
+                        "align": "center",
+                        "justify": "left",
+                        "span": 1,
+                        "style": {
+                          "classes": ""
+                        },
+                        "title": "RECIPE NAME"
+                      }
+                    ]
+                  ],
+                  "pager": {
+                    "initialOption": 50
+                  },
+                  "rows": {
+                    "highlight": {
+                      "color": "#00AC3A"
+                    },
+                    "striped": {
+                      "color": {
+                        "even": "#2B2B2B",
+                        "odd": "#004B3A71"
+                      }
+                    }
+                  },
+                  "selection": {
+                    "enableRowSelection": false,
+                    "style": {
+                      "backgroundColor": "00683A"
+                    }
+                  }
+                },
+                "type": "ia.display.table"
+              }
+            ],
+            "meta": {
+              "name": "downtime"
+            },
+            "position": {
+              "basis": "986px"
+            },
+            "props": {
+              "direction": "column",
+              "style": {
+                "borderStyle": "outset",
+                "borderWidth": 0.1
+              }
+            },
+            "type": "ia.container.flex"
+          },
+          {
+            "children": [
+              {
+                "meta": {
+                  "name": "Label"
+                },
+                "position": {
+                  "basis": "57px"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#004B3A",
+                    "fontFamily": "monospace",
+                    "fontSize": 30,
+                    "textAlign": "center"
+                  },
+                  "text": "CURRENT PACK SHEET COUNT",
+                  "textStyle": {
+                    "fontFamily": "Merriweather",
+                    "fontWeight": "900",
+                    "textOverflow": "clip",
+                    "textTransform": "uppercase"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_0"
+                },
+                "position": {
+                  "basis": "340px"
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_press/HMI_StackPanelCount"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "fontFamily": "Merriweather",
+                    "fontSize": 250,
+                    "fontWeight": "900"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_1"
+                },
+                "position": {
+                  "basis": "57px"
+                },
+                "props": {
+                  "style": {
+                    "backgroundColor": "#004B3A",
+                    "fontFamily": "monospace",
+                    "fontSize": 30,
+                    "textAlign": "center"
+                  },
+                  "text": "PREVIOUS PACK SHEET COUNT",
+                  "textStyle": {
+                    "fontFamily": "Merriweather",
+                    "fontWeight": "900",
+                    "textOverflow": "clip",
+                    "textTransform": "uppercase"
+                  }
+                },
+                "type": "ia.display.label"
+              },
+              {
+                "meta": {
+                  "name": "Label_2"
+                },
+                "position": {
+                  "basis": "438px"
+                },
+                "propConfig": {
+                  "props.text": {
+                    "binding": {
+                      "config": {
+                        "fallbackDelay": 2.5,
+                        "mode": "direct",
+                        "tagPath": "[default]site_press/HMI_StackPanelCount2"
+                      },
+                      "type": "tag"
+                    }
+                  }
+                },
+                "props": {
+                  "style": {
+                    "textAlign": "center"
+                  },
+                  "textStyle": {
+                    "fontFamily": "Merriweather",
+                    "fontSize": 250,
+                    "fontWeight": "900"
+                  }
+                },
+                "type": "ia.display.label"
+              }
+            ],
+            "meta": {
+              "name": "FlexContainer_0"
+            },
+            "position": {
+              "basis": "696px",
+              "grow": 1
+            },
+            "props": {
+              "direction": "column"
+            },
+            "type": "ia.container.flex"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer_3"
+        },
+        "position": {
+          "basis": "552.1px",
+          "grow": 1
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#2B2B2B"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}
