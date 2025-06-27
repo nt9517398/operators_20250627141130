@@ -1,1 +1,16 @@
-
+{
+  "scope": "A",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "data.bin"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "huynhquachuy@gmail.com",
+      "timestamp": "2022-02-15T03:19:15Z"
+    },
+    "lastModificationSignature": "7c3a87b216166d3fade9b6985aa0c01e4e1f78a5de88e9eef4292b056bc04b13"
+  }
+}
