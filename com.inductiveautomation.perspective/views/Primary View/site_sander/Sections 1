@@ -1,6 +1,6 @@
-view.json file is now divided into 21 sections.
-First, here is the main structure of the file. You will need to place the components from Sections 2 through 21 inside the children array of this root structure.
-Section 1: Root Structure
+//view.json file is now divided into 21 sections.
+//First, here is the main structure of the file. You will need to place the components from Sections 2 through 21 inside the children array of this root structure.
+//Section 1: Root Structure
 {
   "custom": {},
   "params": {},
