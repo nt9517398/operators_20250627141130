@@ -1,0 +1,55 @@
+,
+          {
+            "meta": {
+              "name": "CoordinateContainer_11"
+            },
+            "position": {
+              "height": 30.000000000000014,
+              "width": 762,
+              "y": 730
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "meta": {
+              "name": "DateTimeInput"
+            },
+            "position": {
+              "height": 25,
+              "width": 231,
+              "x": 147.8,
+              "y": 51.33
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "expression": "now(100)"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "dismissOnSelect": false,
+              "enabled": false,
+              "formattedValue": "Jun 27, 2025 10:19 AM",
+              "inputProps": {
+                "style": {
+                  "borderWidth": 0.3,
+                  "color": "#FFFFFF",
+                  "fontSize": 20
+                }
+              },
+              "style": {
+                "borderStyle": "solid",
+                "borderWidth": 0.3
+              }
+            },
+            "type": "ia.input.date-time-input"
+          }
