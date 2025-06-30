@@ -1,0 +1,49 @@
+,
+          {
+            "meta": {
+              "name": "Label_7"
+            },
+            "position": {
+              "height": 26.379999999999995,
+              "width": 107.78999999999996,
+              "x": 638.85,
+              "y": 80.29
+            },
+            "props": {
+              "text": "REJECT",
+              "textStyle": {
+                "fontSize": 13,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_3"
+            },
+            "position": {
+              "height": 26.999999999999993,
+              "width": 138,
+              "x": 2.98,
+              "y": 50.96
+            },
+            "props": {
+              "text": "PLY2 SANDER",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 20,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          }
