@@ -1,0 +1,32 @@
+{
+            "meta": {
+              "name": "CoordinateContainer_12"
+            },
+            "position": {
+              "height": 30,
+              "width": 762,
+              "y": 668
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "meta": {
+              "name": "CoordinateContainer"
+            },
+            "position": {
+              "height": 30.000000000000014,
+              "width": 762,
+              "y": 170.02
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          }
