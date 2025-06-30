@@ -1,55 +1,1001 @@
-,
-          {
+{
             "meta": {
-              "name": "CoordinateContainer_11"
+              "name": "que3"
             },
             "position": {
-              "height": 30.000000000000014,
-              "width": 762,
-              "y": 730
+              "height": 18.579999999999927,
+              "width": 124,
+              "x": 768.044,
+              "y": 488.099
             },
             "props": {
+              "enabled": false,
               "style": {
-                "backgroundColor": "#00FBFF40"
+                "backgroundColor": "#FFFFFF",
+                "color": "#000000"
               }
             },
-            "type": "ia.container.coord"
+            "type": "ia.input.text-field"
           },
           {
             "meta": {
-              "name": "DateTimeInput"
+              "name": "Label_84"
             },
             "position": {
-              "height": 25,
-              "width": 231,
-              "x": 147.8,
-              "y": 51.33
+              "height": 18.579999999999927,
+              "width": 51,
+              "x": 808.164,
+              "y": 471.819
+            },
+            "props": {
+              "text": "QUE 3",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "que2"
+            },
+            "position": {
+              "height": 18.579999999999927,
+              "width": 125,
+              "x": 767.714,
+              "y": 450.639
+            },
+            "props": {
+              "enabled": false,
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "color": "#000000"
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "Label_85"
+            },
+            "position": {
+              "height": 18.579999999999927,
+              "width": 49,
+              "x": 806.464,
+              "y": 431.729
+            },
+            "props": {
+              "text": "QUE 2",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_86"
+            },
+            "position": {
+              "height": 18.569999999999936,
+              "width": 49,
+              "x": 808.104,
+              "y": 387.139
+            },
+            "props": {
+              "text": "QUE 1",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "que1"
+            },
+            "position": {
+              "height": 18.579999999999927,
+              "width": 126,
+              "x": 768.054,
+              "y": 406.489
+            },
+            "props": {
+              "enabled": false,
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "color": "#000000"
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "Label_87"
+            },
+            "position": {
+              "height": 21,
+              "width": 87.12,
+              "x": 787.504,
+              "y": 334.119
+            },
+            "props": {
+              "text": "PACK ON LINE",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_88"
+            },
+            "position": {
+              "height": 30.659999999999997,
+              "width": 112,
+              "x": 776.78,
+              "y": 151.43
+            },
+            "props": {
+              "text": "BARCODE FOCUS",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "previous_pack"
+            },
+            "position": {
+              "height": 18.579999999999984,
+              "width": 122,
+              "x": 769.194,
+              "y": 244.769
+            },
+            "props": {
+              "enabled": false,
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "color": "#000000"
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "Label14"
+            },
+            "position": {
+              "height": 27.319999999999993,
+              "width": 65.82,
+              "x": 498.054,
+              "y": 76.7175
+            },
+            "props": {
+              "text": "PALLET",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\t\n\t\n\tself.getSibling(\"previous_pack\").props.text \u003d self.getSibling(\"pack_on_line\").props.text\n\tself.getSibling(\"pack_on_line\").props.text \u003d self.getSibling(\"que1\").props.text\n\tself.getSibling(\"que1\").props.text \u003d self.getSibling(\"que2\").props.text\n\tself.getSibling(\"que2\").props.text \u003d self.getSibling(\"que3\").props.text\n\tself.getSibling(\"que3\").props.text \u003d\"\"\n\t"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button_0"
+            },
+            "position": {
+              "height": 40.870000000000005,
+              "width": 114,
+              "x": 778.194,
+              "y": 279.889
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#FFD300"
+              },
+              "text": "ENTER NEW PACK ON LINE",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "pack_on_line"
+            },
+            "position": {
+              "height": 18.999999999999943,
+              "width": 125,
+              "x": 761.020875,
+              "y": 365.464625
             },
             "propConfig": {
-              "props.value": {
+              "props.text": {
+                "onChange": {
+                  "enabled": null,
+                  "script": "\tsystem.tag.writeBlocking([\u0027[default]site_sander/falldown/barcode/barcode\u0027], [currentValue])\n "
+                }
+              }
+            },
+            "props": {
+              "enabled": false,
+              "style": {
+                "backgroundColor": "#A3FE5D",
+                "color": "#000000"
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "barcode_focus"
+            },
+            "position": {
+              "height": 25.079999999999984,
+              "width": 123,
+              "x": 769.16,
+              "y": 179.34
+            },
+            "propConfig": {
+              "props.text": {
+                "onChange": {
+                  "enabled": null,
+                  "script": "\n    \t\t\tfrom time import sleep\n    \t\t\timport re\n    \t\t\tstring \u003d self.props.text\n    \t\t\tpattern \u003d r\"M[A-Za-z]+\\d{8}\"\n    \t\t\tmatch \u003d re.search(pattern, string)\n    \t\t\t\n    \t\t\tif match:\n    \t\t\t    substring \u003d match.group()\n    \t\t\t    \n    \t\t\tif self.props.text !\u003d \"\":\n    \t\t\t\t\n    \t\t\t\tself.getSibling(\"Label_4\").props.text \u003d self.getSibling(\"Label_4\").props.text + 1\n    \t\t\t\tsleep(2)\n    \t\t\t\tif self.getSibling(\"Label_4\").props.text \u003d\u003d 1 and self.getSibling(\"que1\").props.text !\u003dsubstring and self.getSibling(\"que2\").props.text !\u003d substring:\n    \t\t\t\t\tif self.getSibling(\"que1\").props.text \u003d\u003d \"\":\n    \t\t\t\t\t\tself.getSibling(\"que1\").props.text \u003d substring\n    \t\t\t\t\telif self.getSibling(\"que2\").props.text \u003d\u003d \"\":\n    \t\t\t\t\t\tself.getSibling(\"que2\").props.text \u003d substring\n    \t\t\t\t\telif self.getSibling(\"que3\").props.text \u003d\u003d \"\":\n    \t\t\t\t\t\tself.getSibling(\"que3\").props.text \u003d substring\n    \t\t\t\telif self.getSibling(\"Label_4\").props.text \u003d\u003d 2 and self.getSibling(\"que1\").props.text !\u003d substring and self.getSibling(\"que2\").props.text !\u003d substring:\n    \t\t\t\t\tif self.getSibling(\"que1\").props.text \u003d\u003d \"\":\n    \t\t\t\t\t\tself.getSibling(\"que1\").props.text \u003d substring\n    \t\t\t\t\telif self.getSibling(\"que2\").props.text \u003d\u003d \"\":\n    \t\t\t\t\t\tself.getSibling(\"que2\").props.text \u003d substring\n    \t\t\t\t\telif self.getSibling(\"que3\").props.text \u003d\u003d \"\":\n    \t\t\t\t\t\tself.getSibling(\"que3\").props.text \u003d substring\n    \t\t\t\telif self.getSibling(\"Label_4\").props.text \u003d\u003d 3 and self.getSibling(\"que1\").props.text !\u003d substring and self.getSibling(\"que2\").props.text !\u003d substring:\n    \t\t\t\t\tif self.getSibling(\"que1\").props.text \u003d\u003d \"\":\n    \t\t\t\t\t\tself.getSibling(\"que1\").props.text \u003d substring\n    \t\t\t\t\telif self.getSibling(\"que2\").props.text \u003d\u003d \"\":\n    \t\t\t\t\t\tself.getSibling(\"que2\").props.text \u003d substring\n    \t\t\t\t\telif self.getSibling(\"que3\").props.text \u003d\u003d \"\":\n    \t\t\t\t\t\tself.getSibling(\"que3\").props.text \u003d substring\n    \t\t\t\tself.props.text \u003d \"\""
+                }
+              }
+            },
+            "props": {
+              "deferUpdates": false,
+              "rejectUpdatesWhileFocused": false,
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "color": "#000000"
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "Label_4",
+              "visible": false
+            },
+            "position": {
+              "height": 18.569999999999993,
+              "width": 16.860000000000014,
+              "x": 905.01,
+              "y": 236.94
+            },
+            "propConfig": {
+              "props.text": {
+                "onChange": {
+                  "enabled": null,
+                  "script": "\tif self.props.text \u003d\u003d 4 :\n\t\tself.props.text \u003d 1"
+                }
+              }
+            },
+            "props": {
+              "text": 3
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": false,
+                    "id": "DZVFbaUo",
+                    "modal": false,
+                    "overlayDismiss": true,
+                    "resizable": false,
+                    "showCloseIcon": false,
+                    "type": "open",
+                    "viewPath": "Popup_Views/Popup-Sander-Falldown-Comments",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "undo last entry"
+            },
+            "position": {
+              "height": 33.44,
+              "width": 124,
+              "x": 769.439,
+              "y": 523.859
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#F254F2",
+                "fontSize": 20
+              },
+              "text": "SAVE RUN"
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "total ns"
+            },
+            "position": {
+              "height": 33,
+              "width": 70,
+              "x": 824.3,
+              "y": 572.47
+            },
+            "propConfig": {
+              "custom.AFTERNOON": {
                 "binding": {
                   "config": {
-                    "expression": "now(100)"
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_AFTERNOON",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "custom.MORNING": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_MORNING",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "custom.NIGHT": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_NIGHT",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "expression": "{../TxtHarvesterMark_NS_Count.props.text} + {../TxtNarrowCT_NS_Count.props.text} + {../TxtNC_B_NS_Count.props.text} + {../TxtNarrowCB_NS_Count.props.text} + {../TxtBC_B_NS_Count.props.text} +{../TxtShortCL_NSB_Count.props.text} +{../TxtShortCW_NSB_Count.props.text} +{../TxtWasteOB_NS_Count.props.text} +{../TxtOther1_NS_Count.props.text} +{../TxtCM_NS_Count.props.text} +{../TxtThin_NS_Count.props.text} +{../TxtLUL_NS_Count.props.text} +{../TxtSplit_NS_Count.props.text} +{../TxtIndents_NS_Count.props.text} +{../TxtWasteOF_NS_Count.props.text} +{../TxtSand_NS_Count.props.text} +{../TxtPutty_NS_Count.props.text} +{../TxtShortCW_NSM_Count.props.text} +{../TxtShortCL_NSF_Count.props.text} +{../TxtShortC_NS_Count.props.text}"
                   },
                   "type": "expr"
                 }
               }
             },
             "props": {
-              "dismissOnSelect": false,
               "enabled": false,
-              "formattedValue": "Jun 27, 2025 10:19 AM",
-              "inputProps": {
-                "style": {
-                  "borderWidth": 0.3,
-                  "color": "#FFFFFF",
-                  "fontSize": 20
-                }
-              },
               "style": {
-                "borderStyle": "solid",
-                "borderWidth": 0.3
+                "backgroundColor": "#FFFFFF",
+                "color": "#000000",
+                "fontSize": 20
               }
             },
-            "type": "ia.input.date-time-input"
-          }
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "Label_89"
+            },
+            "position": {
+              "height": 18.579999999999927,
+              "width": 48,
+              "x": 833.757,
+              "y": 556.186
+            },
+            "props": {
+              "text": "Total ",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\tparameters \u003d {\"run_number\":tagValue}\n\tsystem.db.runNamedQuery(\"falldown_sander/delete_last_entry\",parameters)\n\tsystem.perspective.sendMessage(messageType \u003d \u0027sander_refreshing\u0027,payload\u003d{},scope \u003d \u0027session\u0027)"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button_1"
+            },
+            "position": {
+              "height": 34,
+              "width": 80,
+              "x": 785.3984375,
+              "y": 102.015625
+            },
+            "props": {
+              "text": "UNDO"
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "label total ns"
+            },
+            "position": {
+              "height": 18.579999999999927,
+              "width": 36,
+              "x": 786.34,
+              "y": 580
+            },
+            "props": {
+              "text": "NS:",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "total pallet_g1s"
+            },
+            "position": {
+              "height": 33,
+              "width": 70,
+              "x": 824.21,
+              "y": 609.93
+            },
+            "propConfig": {
+              "custom.AFTERNOON": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_AFTERNOON",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "custom.MORNING": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_MORNING",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "custom.NIGHT": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_NIGHT",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "custom.value": {
+                "binding": {
+                  "config": {
+                    "path": "this.props.text"
+                  },
+                  "type": "property"
+                }
+              },
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "expression": "{../TxtHarvesterMark_DG_Count.props.text} +\r\n{../TxtNarrowCT_DG_Count.props.text} +\r\n{../TxtNC_B_DG_Count.props.text} +\r\n{../TxtNarrowCB_DG_Count.props.text} +\r\n{../TxtBC_B_DG_Count.props.text} +\r\n{../TxtGNC_DG_Count.props.text} +\r\n{../TxtOther1_DG_Count.props.text} +\r\n{../TxtCM_DG_Count.props.text} +\r\n{../TxtThin_DG_Count.props.text} +\r\n{../TxtLUL_DG_Count.props.text} +\r\n{../TxtSplit_DG_Count.props.text} +\r\n{../TxtIndents_DG_Count.props.text} +\r\n{../TxtWasteOF_DG_Count.props.text} +\r\n{../TxtSand_DG_Count.props.text} +\r\n{../TxtDamage_DG_Count.props.text} +\r\n{../TxtPutty_DG_Count.props.text} +\r\n{../TxtShortCW_DGM_Count.props.text} +\r\n{../TxtShortCL_DGF_Count.props.text} +\r\n{../TxtShortC_DG_Count.props.text} +\r\n{../TxtShortCL_DGB_Count.props.text} +\r\n{../TxtShortCW_DGB_Count.props.text} +\r\n{../TxtWasteOB_DG_Count.props.text} \r\n"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "enabled": false,
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "color": "#000000",
+                "fontSize": 20
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "label total pallet/g1s"
+            },
+            "position": {
+              "height": 18.58,
+              "width": 58,
+              "x": 767.26,
+              "y": 615
+            },
+            "props": {
+              "text": "PAL/G1S:",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "label total reject"
+            },
+            "position": {
+              "height": 18.85,
+              "width": 60,
+              "x": 766.26,
+              "y": 652
+            },
+            "props": {
+              "text": "REJECT:",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "total reject"
+            },
+            "position": {
+              "height": 33,
+              "width": 70,
+              "x": 824.21,
+              "y": 647.93
+            },
+            "propConfig": {
+              "custom.AFTERNOON": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_AFTERNOON",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "custom.MORNING": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_MORNING",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "custom.NIGHT": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_NIGHT",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "expression": "{../TxtBC_RJ_Count.props.text} +\r\n{../TxtShortC_RJ_Count.props.text} +\r\n{../TxtShortCL_RJ_Count.props.text} +\r\n{../TxtShortCW_RJ_Count.props.text} +\r\n{../TxtPutty_RJ_Count.props.text} +\r\n{../TxtDamage_RJ_Count.props.text} +\r\n{../TxtSand_RJ_Count.props.text} +\r\n{../TxtWasteOB_RJ_Count.props.text} +\r\n{../TxtIndents_RJ_Count.props.text} +\r\n{../TxtSplit_RJ_Count.props.text} +\r\n{../TxtLUL_RJ_Count.props.text} +\r\n{../TxtThin_RJ_Count.props.text} +\r\n{../TxtCM_RJ_Count.props.text} +\r\n{../TxtOther1_RJ_Count.props.text} +\r\n{../TxtGNC_RJ_Count.props.text}+\r\n{../TxtDELA_RJ_Count.props.text} +\r\n{../TxtOut_RJ_Count.props.text} +\r\n{../TxtHarvesterMark_RJ_Count.props.text} + \r\n{../TxtNC_RJ_Count.props.text}"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "enabled": false,
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "color": "#000000",
+                "fontSize": 20
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tif self.view.getChild(\"root\").props.style.backgroundColor \u003d\u003d \u0027#808080\u0027 :\n\t\tself.view.getChild(\"root\").props.style.backgroundColor \u003d \u0027#000000\u0027\n\t\tself.props.text \u003d \u0027STRONG EYES\u0027\n\telif self.view.getChild(\"root\").props.style.backgroundColor \u003d\u003d \u0027#000000\u0027 :\n\t\tself.view.getChild(\"root\").props.style.backgroundColor \u003d \u0027#808080\u0027\n\t\tself.props.text \u003d \u0027WEAK EYES\u0027"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button_2"
+            },
+            "position": {
+              "height": 22,
+              "width": 123.00000000000001,
+              "x": 22.05,
+              "y": 9.32
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#FFD300"
+              },
+              "text": "WEAK EYES"
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "zNyej1Q0",
+                    "modal": true,
+                    "overlayDismiss": true,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewPath": "Popup_Views/Popup-Sander-Falldown",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button_3"
+            },
+            "position": {
+              "height": 26,
+              "width": 54,
+              "x": 874.17,
+              "y": 50
+            },
+            "props": {
+              "text": "EDIT"
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "bin1_and_bin2"
+            },
+            "position": {
+              "height": 33,
+              "width": 70,
+              "x": 943.3,
+              "y": 572.47
+            },
+            "propConfig": {
+              "custom.AFTERNOON": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_AFTERNOON",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "custom.MORNING": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_MORNING",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "custom.NIGHT": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_NIGHT",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "path": "../total ns.props.text"
+                  },
+                  "transforms": [
+                    {
+                      "expression": "if({value} \u003d 0, {[default]site_sander/bin_counter/Stacker_1_Psc} + {[default]site_sander/bin_counter/Stacker_2_Psc},{[default]site_sander/bin_counter/Stacker_2_Psc})",
+                      "type": "expression"
+                    }
+                  ],
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "enabled": false,
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "color": "#000000",
+                "fontSize": 20
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "bin3_total"
+            },
+            "position": {
+              "height": 33,
+              "width": 70,
+              "x": 942.3,
+              "y": 609.47
+            },
+            "propConfig": {
+              "custom.AFTERNOON": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_AFTERNOON",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "custom.MORNING": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_MORNING",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "custom.NIGHT": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_NIGHT",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "direct",
+                    "tagPath": "[default]site_sander/bin_counter/Stacker_3_Psc"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "enabled": false,
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "color": "#000000",
+                "fontSize": 20
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "bin4_total"
+            },
+            "position": {
+              "height": 33,
+              "width": 70,
+              "x": 941.3,
+              "y": 647.47
+            },
+            "propConfig": {
+              "custom.AFTERNOON": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_AFTERNOON",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "custom.MORNING": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_MORNING",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "custom.NIGHT": {
+                "binding": {
+                  "config": {
+                    "polling": {
+                      "enabled": true,
+                      "rate": "1"
+                    },
+                    "queryPath": "falldown_sander/total/total_NIGHT",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              },
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "expression": "{[default]site_sander/bin_counter/Stacker_4_Psc}"
+                  },
+                  "transforms": [
+                    {
+                      "formatType": "numeric",
+                      "formatValue": "#",
+                      "type": "format"
+                    }
+                  ],
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "enabled": false,
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "color": "#000000",
+                "fontSize": 20
+              }
+            },
+            "type": "ia.input.text-field"
+          },
+          {
+            "meta": {
+              "name": "label bin 1_2"
+            },
+            "position": {
+              "height": 18.579999999999927,
+              "width": 40,
+              "x": 900,
+              "y": 580
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "direct",
+                    "tagPath": "[default]site_sander/falldown/product/grade"
+                  },
+                  "transforms": [
+                    {
+                      "fallback": "\"BIN 2\"",
+                      "inputType": "expression",
+                      "mappings": [
+                        {
+                          "input": "\"NS\"",
+                          "output": "\"BIN 1+2\""
+                        }
+                      ],
+                      "outputType": "expression",
+                      "type": "map"
+                    }
+                  ],
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "label bin 3"
+            },
+            "position": {
+              "height": 18.579999999999927,
+              "width": 40,
+              "x": 900,
+              "y": 615
+            },
+            "propConfig": {
+              "props.style.classes": {
+                "binding": {
+                  "config": {
+                    "expression": "if({../bin3_total.props.text} - {../total pallet_g1s.props.text} !\u003d0 ,\u0027Alarm_1\u0027,\u0027\u0027)"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "style": {},
+              "text": "BIN 3:",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
