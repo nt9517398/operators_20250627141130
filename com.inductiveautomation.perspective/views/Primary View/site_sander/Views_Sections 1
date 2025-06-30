@@ -1,0 +1,998 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 1021
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "CoordinateContainer_12"
+            },
+            "position": {
+              "height": 30,
+              "width": 762,
+              "y": 668
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "meta": {
+              "name": "CoordinateContainer"
+            },
+            "position": {
+              "height": 30.000000000000014,
+              "width": 762,
+              "y": 170.02
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "meta": {
+              "name": "CoordinateContainer_1"
+            },
+            "position": {
+              "height": 30.000000000000014,
+              "width": 762,
+              "y": 106.02
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "meta": {
+              "name": "CoordinateContainer_3"
+            },
+            "position": {
+              "height": 30.000000000000014,
+              "width": 762,
+              "y": 231.02
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "meta": {
+              "name": "CoordinateContainer_5"
+            },
+            "position": {
+              "height": 30.000000000000014,
+              "width": 762,
+              "y": 291.02
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "meta": {
+              "name": "CoordinateContainer_6"
+            },
+            "position": {
+              "height": 30.000000000000014,
+              "width": 762,
+              "y": 354.02
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "meta": {
+              "name": "CoordinateContainer_7"
+            },
+            "position": {
+              "height": 30.000000000000014,
+              "width": 762,
+              "y": 418.02
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "meta": {
+              "name": "CoordinateContainer_8"
+            },
+            "position": {
+              "height": 30.000000000000014,
+              "width": 762,
+              "y": 480.02
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "meta": {
+              "name": "CoordinateContainer_9"
+            },
+            "position": {
+              "height": 30.000000000000014,
+              "width": 762,
+              "y": 542.02
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "meta": {
+              "name": "CoordinateContainer_10"
+            },
+            "position": {
+              "height": 30.000000000000014,
+              "width": 762,
+              "y": 605
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "meta": {
+              "name": "CoordinateContainer_11"
+            },
+            "position": {
+              "height": 30.000000000000014,
+              "width": 762,
+              "y": 730
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FBFF40"
+              }
+            },
+            "type": "ia.container.coord"
+          },
+          {
+            "meta": {
+              "name": "DateTimeInput"
+            },
+            "position": {
+              "height": 25,
+              "width": 231,
+              "x": 147.8,
+              "y": 51.33
+            },
+            "propConfig": {
+              "props.value": {
+                "binding": {
+                  "config": {
+                    "expression": "now(100)"
+                  },
+                  "type": "expr"
+                }
+              }
+            },
+            "props": {
+              "dismissOnSelect": false,
+              "enabled": false,
+              "formattedValue": "Jun 27, 2025 10:19 AM",
+              "inputProps": {
+                "style": {
+                  "borderWidth": 0.3,
+                  "color": "#FFFFFF",
+                  "fontSize": 20
+                }
+              },
+              "style": {
+                "borderStyle": "solid",
+                "borderWidth": 0.3
+              }
+            },
+            "type": "ia.input.date-time-input"
+          },
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "height": 22.299999999999997,
+              "width": 139.26,
+              "x": 206.384,
+              "y": 26.1719
+            },
+            "props": {
+              "text": "DATE / TIME"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_0"
+            },
+            "position": {
+              "height": 25.000000000000004,
+              "width": 68,
+              "x": 404.88,
+              "y": 24.34
+            },
+            "props": {
+              "text": "GRADER"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_1"
+            },
+            "position": {
+              "height": 25.08,
+              "width": 35.960000000000036,
+              "x": 535.884,
+              "y": 25.2113
+            },
+            "props": {
+              "text": "SHIFT"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_2"
+            },
+            "position": {
+              "height": 26.000000000000004,
+              "width": 28.31000000000006,
+              "x": 817.584,
+              "y": 23.5119
+            },
+            "props": {
+              "text": "FACE"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label30",
+              "visible": false
+            },
+            "position": {
+              "height": 25.439999999999998,
+              "width": 127.00000000000003,
+              "x": 161.54,
+              "y": 79.36
+            },
+            "props": {
+              "text": "NON STRUCTURAL",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label61",
+              "visible": false
+            },
+            "position": {
+              "height": 25.439999999999998,
+              "width": 132.99999999999994,
+              "x": 484.044,
+              "y": 76.9575
+            },
+            "props": {
+              "text": "GOOD ONE SIDE",
+              "textStyle": {
+                "fontSize": 13,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_7"
+            },
+            "position": {
+              "height": 26.379999999999995,
+              "width": 107.78999999999996,
+              "x": 638.85,
+              "y": 80.29
+            },
+            "props": {
+              "text": "REJECT",
+              "textStyle": {
+                "fontSize": 13,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_3"
+            },
+            "position": {
+              "height": 26.999999999999993,
+              "width": 138,
+              "x": 2.98,
+              "y": 50.96
+            },
+            "props": {
+              "text": "PLY2 SANDER",
+              "textStyle": {
+                "borderStyle": "none",
+                "color": "#E8E8E8",
+                "fill": "#FFFDFD",
+                "fontFamily": "monospace",
+                "fontSize": 20,
+                "fontWeight": "bolder",
+                "outlineWidth": "10",
+                "textAlign": "center",
+                "textOverflow": "clip",
+                "textTransform": "uppercase",
+                "whiteSpace": "normal",
+                "wordWrap": "break-word"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_8"
+            },
+            "position": {
+              "height": 24.999999999999996,
+              "width": 75.75,
+              "x": 676.384,
+              "y": 24.8312
+            },
+            "props": {
+              "text": "PRODUCT"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "zNyej1Q0",
+                    "modal": true,
+                    "overlayDismiss": true,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewPath": "Popup_Views/Popup-Sander-Falldown",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "shift"
+            },
+            "position": {
+              "height": 25,
+              "width": 123.19000000000005,
+              "x": 495.1,
+              "y": 50.7975
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "direct",
+                    "tagPath": "[default]site_sander/falldown/product/shift"
+                  },
+                  "type": "tag"
+                },
+                "onChange": {
+                  "enabled": null,
+                  "script": "\t\tcase1 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case1\u0027).value\n\t\tcase2 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case2\u0027).value\n\t\tcase3 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case3\u0027).value\n\t\tcase4 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case4\u0027).value\n\t\tcase5 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case5\u0027).value\n\t\tcase6 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case6\u0027).value\n\t\tcase7 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case7\u0027).value\n\t\t\n\t\t\t\n\t\t\n\t\t\t\n\t\t\n\t\tif case1 \u003d\u003d 1:\n\t\t\t\n\t\t\tself.getSibling(\"Label26\").meta.visible \u003d False\n\t\t\t\n\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbGNC_RJ\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"Label14\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtCM_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtDamage_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtLUL_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtOther1_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtPutty_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtSand_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtIndents_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtShortC_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtShortCL_DGB_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtShortCL_DGF_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtShortCW_DGB_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtShortCW_DGM_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtSplit_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtThin_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtWasteOB_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtWasteOF_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtHarvesterMark_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbCM_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbDamage_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbLUL_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbOther1_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbPutty_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbSand_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbIndents_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbShortC_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbShortCL_DGB\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbShortCL_DGF\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbShortCW_DGB\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbShortCW_DGM\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbSplit_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbThin_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbWasteOB_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbWasteOF_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbHarvesterMark_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"Label30\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtNarrowCT_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtNarrowCB_NS_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtShortC_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtShortCL_NSF_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtShortCL_NSB_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtShortCW_NSM_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtShortCW_NSB_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtPutty_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtSand_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtWasteOF_NS_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtWasteOB_NS_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtSplit_NS_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtLUL_NS_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtThin_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtCM_NS_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtOther1_NS_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtIndents_NS_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtHarvesterMark_NS_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbNarrowCT_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbNarrowCB_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbShortC_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbShortCL_NSF\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbShortCL_NSB\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbShortCW_NSM\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbShortCW_NSB\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbPutty_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbSand_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbWasteOF_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbWasteOB_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbSplit_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbLUL_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbThin_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbCM_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbOther1_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbIndents_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbHarvesterMark_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"Label61\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbBC_B_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbBC_B_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbNC_B_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtBC_B_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtBC_B_NS_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtNC_B_NS_Count\").meta.visible \u003d False\n\t\t\t\n\t\telse:\n\t\t\tself.getSibling(\"TxtBC_B_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtNC_B_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"Label26\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbNC_B_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbGNC_RJ\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"Label14\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtCM_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtDamage_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtLUL_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtOther1_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtPutty_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtSand_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtIndents_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtShortC_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtShortCL_DGB_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtShortCL_DGF_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtShortCW_DGB_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtShortCW_DGM_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtSplit_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtThin_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtWasteOB_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtWasteOF_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtHarvesterMark_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbCM_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbDamage_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbLUL_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbOther1_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbPutty_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbSand_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbIndents_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbShortC_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbShortCL_DGB\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbShortCL_DGF\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbShortCW_DGB\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbShortCW_DGM\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbSplit_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbThin_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbWasteOB_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbWasteOF_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbHarvesterMark_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"Label30\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtNarrowCT_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtNarrowCB_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtShortC_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtShortCL_NSF_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtShortCL_NSB_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtShortCW_NSM_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtShortCW_NSB_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtPutty_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtSand_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtWasteOF_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtWasteOB_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtSplit_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtLUL_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtThin_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtCM_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtOther1_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtIndents_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtHarvesterMark_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbNarrowCT_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbNarrowCB_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbBC_B_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbShortC_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbShortCL_NSF\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbShortCL_NSB\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbShortCW_NSM\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbShortCW_NSB\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbPutty_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbSand_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbWasteOF_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbWasteOB_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbSplit_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbLUL_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbThin_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbCM_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbOther1_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbIndents_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbHarvesterMark_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"Label61\").meta.visible \u003d False\n\t\t\t\n\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\tif case2 \u003d\u003d1:\n\t\t\t\n\t\t\tself.getSibling(\"Label61\").meta.visible \u003d False\n\t\t\tself.getSibling(\"Label14\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbHarvesterMark_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtHarvesterMark_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d True\n\t\t\t\n\t\t\tself.getSibling(\"CmbShortCL_DGF\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtShortCL_DGF_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbShortCW_DGM\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtShortCW_DGM_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbPutty_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtPutty_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbDamage_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtDamage_DG_Count\").meta.visible \u003d True\n\t\t\t\n\t\t\tself.getSibling(\"CmbWasteOF_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtWasteOF_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbIndents_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtIndents_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbSplit_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtSplit_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbLUL_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtLUL_DG_Count\").meta.visible \u003d True\n\t\t\n\t\t\tself.getSibling(\"CmbOther1_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtOther1_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbBC_B_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtBC_B_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbShortCL_DGB\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtShortCL_DGB_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbShortCW_DGB\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtShortCW_DGB_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbWasteOB_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtWasteOB_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbLUL_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtLUL_NS_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbCM_NS\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtCM_NS_Count\").meta.visible \u003d False\n\t\t\t\n\t\t\t\n\t\n\t\t\t\n\t\t\t\n\t\t\n\t\tif case3 \u003d\u003d 1:\n\t\t\t\n\t\t\tself.getSibling(\"Label26\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbGNC_RJ\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtDamage_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbDamage_DG\").meta.visible \u003d False\n\t\t\t\n\t\telse:\n\t\t\t\n\t\t\tself.getSibling(\"Label26\").meta.visible \u003d False\n\t\t\t\n\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbGNC_RJ\").meta.visible \u003d False\n\t\t\t\n\t\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d False\n\t\t\t\n\t\t\n\t\t\t\n\t\t\n\t\tif case4 \u003d\u003d1:\n\t\t\n\t\t\tself.getSibling(\"Label61\").meta.visible \u003d True\n\t\t\tself.getSibling(\"Label14\").meta.visible \u003d False\n\t\t\n\t\t\t\n\t\tif case5 \u003d\u003d1:\n\t\t\t\n\t\t\tself.getSibling(\"Label61\").meta.visible \u003d True\n\t\t\tself.getSibling(\"Label14\").meta.visible \u003d False\n\t\t\t\n\t\t\n\t\t\t\n\t\tif case6 \u003d\u003d1 :\n\t\t\t\n\t\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbNarrowCT_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtNarrowCT_NS_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbNC_B_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtNC_B_NS_Count\").meta.visible \u003d True\n\t\t\n\t\t\t\n\t\tif case7 \u003d\u003d1:\n\t\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d False\n\t\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d False\n\t\t\tself.getSibling(\"CmbNarrowCT_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtNarrowCT_NS_Count\").meta.visible \u003d True\n\t\t\tself.getSibling(\"CmbNC_B_NS\").meta.visible \u003d True\n\t\t\tself.getSibling(\"TxtNC_B_NS_Count\").meta.visible \u003d True\n\t\t\n\t\t\t"
+                }
+              }
+            },
+            "props": {
+              "style": {
+                "borderStyle": "solid",
+                "borderWidth": 0.1
+              },
+              "textStyle": {
+                "fontSize": 20,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "zNyej1Q0",
+                    "modal": true,
+                    "overlayDismiss": true,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewPath": "Popup_Views/Popup-Sander-Falldown",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "product"
+            },
+            "position": {
+              "height": 24.999999999999993,
+              "width": 169,
+              "x": 627.6,
+              "y": 51.38
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "direct",
+                    "tagPath": "[default]site_sander/falldown/product/thickness"
+                  },
+                  "transforms": [
+                    {
+                      "expression": "{value} + \" \"+  {[default]site_sander/falldown/product/grade} + \" \" + {[default]site_sander/falldown/product/product}",
+                      "type": "expression"
+                    }
+                  ],
+                  "type": "tag"
+                },
+                "onChange": {
+                  "enabled": null,
+                  "script": "\t\t\tcase1 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case1\u0027).value\n\t\t\tcase2 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case2\u0027).value\n\t\t\tcase3 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case3\u0027).value\n\t\t\tcase4 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case4\u0027).value\n\t\t\tcase5 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case5\u0027).value\n\t\t\tcase6 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case6\u0027).value\n\t\t\tcase7 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case7\u0027).value\n\t\t\t\n\t\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\n\t\t\tif case1 \u003d\u003d 1:\n\t\t\t\t\n\t\t\t\tself.getSibling(\"Label26\").meta.visible \u003d False\n\t\t\t\t\n\t\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbGNC_RJ\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"Label14\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtCM_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtDamage_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtLUL_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtOther1_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtPutty_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtSand_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtIndents_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtShortC_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtShortCL_DGB_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtShortCL_DGF_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtShortCW_DGB_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtShortCW_DGM_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtSplit_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtThin_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtWasteOB_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtWasteOF_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtHarvesterMark_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbCM_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbDamage_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbLUL_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbOther1_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbPutty_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbSand_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbIndents_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbShortC_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbShortCL_DGB\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbShortCL_DGF\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbShortCW_DGB\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbShortCW_DGM\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbSplit_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbThin_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbWasteOB_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbWasteOF_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbHarvesterMark_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"Label30\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtNarrowCT_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtNarrowCB_NS_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtShortC_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtShortCL_NSF_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtShortCL_NSB_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtShortCW_NSM_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtShortCW_NSB_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtPutty_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtSand_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtWasteOF_NS_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtWasteOB_NS_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtSplit_NS_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtLUL_NS_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtThin_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtCM_NS_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtOther1_NS_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtIndents_NS_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtHarvesterMark_NS_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbNarrowCT_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbNarrowCB_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbShortC_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbShortCL_NSF\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbShortCL_NSB\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbShortCW_NSM\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbShortCW_NSB\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbPutty_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbSand_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbWasteOF_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbWasteOB_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbSplit_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbLUL_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbThin_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbCM_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbOther1_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbIndents_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbHarvesterMark_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"Label61\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbBC_B_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbBC_B_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbNC_B_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtBC_B_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtBC_B_NS_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtNC_B_NS_Count\").meta.visible \u003d False\n\t\t\t\t\n\t\t\telse:\n\t\t\t\tself.getSibling(\"TxtBC_B_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtNC_B_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"Label26\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbNC_B_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbGNC_RJ\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"Label14\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtCM_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtDamage_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtLUL_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtOther1_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtPutty_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtSand_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtIndents_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtShortC_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtShortCL_DGB_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtShortCL_DGF_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtShortCW_DGB_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtShortCW_DGM_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtSplit_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtThin_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtWasteOB_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtWasteOF_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtHarvesterMark_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbCM_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbDamage_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbLUL_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbBC_B_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbOther1_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbPutty_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbSand_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbIndents_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbShortC_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbShortCL_DGB\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbShortCL_DGF\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbShortCW_DGB\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbShortCW_DGM\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbSplit_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbThin_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbWasteOB_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbWasteOF_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbHarvesterMark_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"Label30\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtNarrowCT_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtNarrowCB_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtBC_B_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtShortC_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtShortCL_NSF_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtShortCL_NSB_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtShortCW_NSM_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtShortCW_NSB_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtPutty_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtSand_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtWasteOF_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtWasteOB_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtSplit_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtLUL_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtThin_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtCM_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtOther1_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtIndents_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtHarvesterMark_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbNarrowCT_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbNarrowCB_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbBC_B_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbShortC_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbShortCL_NSF\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbShortCL_NSB\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbShortCW_NSM\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbShortCW_NSB\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbPutty_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbSand_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbWasteOF_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbWasteOB_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbSplit_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbLUL_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbThin_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbCM_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbOther1_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbIndents_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbHarvesterMark_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"Label61\").meta.visible \u003d False\n\t\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\tif case2 \u003d\u003d1:\n\t\t\t\t\n\t\t\t\tself.getSibling(\"Label61\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"Label14\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbHarvesterMark_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtHarvesterMark_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d True\n\t\t\t\t\n\t\t\t\tself.getSibling(\"CmbShortCL_DGF\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtShortCL_DGF_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbShortCW_DGM\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtShortCW_DGM_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbPutty_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtPutty_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbDamage_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtDamage_DG_Count\").meta.visible \u003d True\n\t\t\t\t\n\t\t\t\tself.getSibling(\"CmbWasteOF_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtWasteOF_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbIndents_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtIndents_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbSplit_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtSplit_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbLUL_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtLUL_DG_Count\").meta.visible \u003d True\n\t\t\t\n\t\t\t\tself.getSibling(\"CmbOther1_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtOther1_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbBC_B_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtBC_B_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbShortCL_DGB\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtShortCL_DGB_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbShortCW_DGB\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtShortCW_DGB_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbWasteOB_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtWasteOB_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbLUL_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtLUL_NS_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbCM_NS\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtCM_NS_Count\").meta.visible \u003d False\n\t\t\t\t\n\t\t\t\t\n\t\t\n\t\t\t\t\n\t\t\t\t\n\t\t\t\n\t\t\tif case3 \u003d\u003d 1:\n\t\t\t\t\n\t\t\t\tself.getSibling(\"Label26\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbGNC_RJ\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtDamage_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbDamage_DG\").meta.visible \u003d False\n\t\t\t\t\n\t\t\telse:\n\t\t\t\t\n\t\t\t\tself.getSibling(\"Label26\").meta.visible \u003d False\n\t\t\t\t\n\t\t\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbGNC_RJ\").meta.visible \u003d False\n\t\t\t\t\n\t\t\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d False\n\t\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\t\n\t\t\tif case4 \u003d\u003d1:\n\t\t\t\n\t\t\t\tself.getSibling(\"Label61\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"Label14\").meta.visible \u003d False\n\t\t\t\n\t\t\t\t\n\t\t\tif case5 \u003d\u003d1:\n\t\t\t\t\n\t\t\t\tself.getSibling(\"Label61\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"Label14\").meta.visible \u003d False\n\t\t\t\t\n\t\t\t\n\t\t\t\t\n\t\t\tif case6 \u003d\u003d1 :\n\t\t\t\t\n\t\t\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbNarrowCT_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtNarrowCT_NS_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbNC_B_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtNC_B_NS_Count\").meta.visible \u003d True\n\t\t\t\n\t\t\t\t\n\t\t\tif case7 \u003d\u003d1:\n\t\t\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d False\n\t\t\t\tself.getSibling(\"CmbNarrowCT_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtNarrowCT_NS_Count\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"CmbNC_B_NS\").meta.visible \u003d True\n\t\t\t\tself.getSibling(\"TxtNC_B_NS_Count\").meta.visible \u003d True\n\t\t\t\n\t\t\t\t"
+                }
+              }
+            },
+            "props": {
+              "style": {
+                "borderStyle": "solid",
+                "borderWidth": 0.1
+              },
+              "textStyle": {
+                "fontSize": 20,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "zNyej1Q0",
+                    "modal": true,
+                    "overlayDismiss": true,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewPath": "Popup_Views/Popup-Sander-Falldown",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "face"
+            },
+            "position": {
+              "height": 25,
+              "width": 65,
+              "x": 804.2,
+              "y": 51.36
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "direct",
+                    "tagPath": "[default]site_sander/falldown/product/face"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "style": {
+                "borderStyle": "solid",
+                "borderWidth": 0.1
+              },
+              "textStyle": {
+                "fontSize": 20,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "draggable": true,
+                    "id": "zNyej1Q0",
+                    "modal": true,
+                    "overlayDismiss": true,
+                    "resizable": true,
+                    "showCloseIcon": true,
+                    "type": "open",
+                    "viewPath": "Popup_Views/Popup-Sander-Falldown",
+                    "viewportBound": false
+                  },
+                  "scope": "C",
+                  "type": "popup"
+                }
+              }
+            },
+            "meta": {
+              "name": "grader"
+            },
+            "position": {
+              "height": 25,
+              "width": 100,
+              "x": 383.6,
+              "y": 50.77
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "fallbackDelay": 2.5,
+                    "mode": "direct",
+                    "tagPath": "[default]site_sander/falldown/product/grader"
+                  },
+                  "type": "tag"
+                }
+              }
+            },
+            "props": {
+              "style": {
+                "borderStyle": "solid",
+                "borderWidth": 0.1
+              },
+              "textStyle": {
+                "fontSize": 20,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\tcase1 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case1\u0027).value\n\tcase2 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case2\u0027).value\n\tcase3 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case3\u0027).value\n\tcase4 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case4\u0027).value\n\tcase5 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case5\u0027).value\n\tcase6 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case6\u0027).value\n\tcase7 \u003d system.tag.read(\u0027[default]site_sander/falldown/case/case7\u0027).value\n\t\n\t\t\n\t\n\t\t\n\t\n\tif case1 \u003d\u003d 1:\n\t\t\n\t\tself.getSibling(\"Label26\").meta.visible \u003d False\n\t\t\n\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbGNC_RJ\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"Label14\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtCM_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtDamage_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtLUL_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtOther1_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtPutty_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtSand_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtIndents_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtShortC_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtShortCL_DGB_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtShortCL_DGF_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtShortCW_DGB_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtShortCW_DGM_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtSplit_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtThin_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtWasteOB_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtWasteOF_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtHarvesterMark_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbCM_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbDamage_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbLUL_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbOther1_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbPutty_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbSand_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbIndents_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbShortC_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbShortCL_DGB\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbShortCL_DGF\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbShortCW_DGB\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbShortCW_DGM\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbSplit_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbThin_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbWasteOB_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbWasteOF_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbHarvesterMark_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"Label30\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtNarrowCT_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtNarrowCB_NS_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtShortC_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtShortCL_NSF_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtShortCL_NSB_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtShortCW_NSM_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtShortCW_NSB_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtPutty_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtSand_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtWasteOF_NS_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtWasteOB_NS_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtSplit_NS_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtLUL_NS_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtThin_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtCM_NS_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtOther1_NS_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtIndents_NS_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtHarvesterMark_NS_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbNarrowCT_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbNarrowCB_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbShortC_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbShortCL_NSF\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbShortCL_NSB\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbShortCW_NSM\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbShortCW_NSB\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbPutty_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbSand_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbWasteOF_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbWasteOB_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbSplit_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbLUL_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbThin_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbCM_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbOther1_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbIndents_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbHarvesterMark_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"Label61\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbBC_B_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbBC_B_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbNC_B_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtBC_B_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtBC_B_NS_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtNC_B_NS_Count\").meta.visible \u003d False\n\t\t\n\telse:\n\t\tself.getSibling(\"TxtBC_B_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtNC_B_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"Label26\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbNC_B_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbGNC_RJ\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"Label14\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtCM_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtDamage_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtLUL_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtOther1_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtPutty_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtSand_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtIndents_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtShortC_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtShortCL_DGB_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtShortCL_DGF_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtShortCW_DGB_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtShortCW_DGM_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtSplit_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtThin_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtWasteOB_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtWasteOF_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtHarvesterMark_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbCM_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbDamage_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbLUL_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbOther1_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbPutty_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbSand_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbIndents_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbShortC_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbShortCL_DGB\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbShortCL_DGF\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbShortCW_DGB\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbShortCW_DGM\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbSplit_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbThin_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbWasteOB_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbWasteOF_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbHarvesterMark_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"Label30\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtNarrowCT_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtNarrowCB_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtShortC_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtShortCL_NSF_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtShortCL_NSB_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtShortCW_NSM_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtShortCW_NSB_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtPutty_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtSand_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtWasteOF_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtWasteOB_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtSplit_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtLUL_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtThin_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtCM_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtOther1_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtIndents_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtHarvesterMark_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbNarrowCT_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbNarrowCB_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbBC_B_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbShortC_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbShortCL_NSF\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbShortCL_NSB\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbShortCW_NSM\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbShortCW_NSB\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbPutty_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbSand_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbWasteOF_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbWasteOB_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbSplit_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbLUL_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbThin_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbCM_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbOther1_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbIndents_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbHarvesterMark_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"Label61\").meta.visible \u003d False\n\t\t\n\t\n\t\t\n\t\t\n\t\t\n\tif case2 \u003d\u003d1:\n\t\t\n\t\tself.getSibling(\"Label61\").meta.visible \u003d False\n\t\tself.getSibling(\"Label14\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbHarvesterMark_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtHarvesterMark_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d True\n\t\t\n\t\tself.getSibling(\"CmbShortCL_DGF\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtShortCL_DGF_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbShortCW_DGM\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtShortCW_DGM_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbPutty_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtPutty_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbDamage_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtDamage_DG_Count\").meta.visible \u003d True\n\t\t\n\t\tself.getSibling(\"CmbWasteOF_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtWasteOF_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbIndents_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtIndents_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbSplit_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtSplit_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbLUL_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtLUL_DG_Count\").meta.visible \u003d True\n\t\n\t\tself.getSibling(\"CmbOther1_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtOther1_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbBC_B_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtBC_B_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbShortCL_DGB\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtShortCL_DGB_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbShortCW_DGB\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtShortCW_DGB_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbWasteOB_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtWasteOB_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbLUL_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtLUL_NS_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbCM_NS\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtCM_NS_Count\").meta.visible \u003d False\n\t\t\n\t\t\n\n\t\t\n\t\t\n\t\n\tif case3 \u003d\u003d 1:\n\t\t\n\t\tself.getSibling(\"Label26\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbGNC_RJ\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtDamage_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbDamage_DG\").meta.visible \u003d False\n\t\t\n\telse:\n\t\t\n\t\tself.getSibling(\"Label26\").meta.visible \u003d False\n\t\t\n\t\tself.getSibling(\"CmbGNC_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtGNC_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbGNC_RJ\").meta.visible \u003d False\n\t\t\n\t\tself.getSibling(\"TxtGNC_RJ_Count\").meta.visible \u003d False\n\t\t\n\t\n\t\t\n\t\n\tif case4 \u003d\u003d1:\n\t\n\t\tself.getSibling(\"Label61\").meta.visible \u003d True\n\t\tself.getSibling(\"Label14\").meta.visible \u003d False\n\t\n\t\t\n\tif case5 \u003d\u003d1:\n\t\t\n\t\tself.getSibling(\"Label61\").meta.visible \u003d True\n\t\tself.getSibling(\"Label14\").meta.visible \u003d False\n\t\t\n\t\n\t\t\n\tif case6 \u003d\u003d1 :\n\t\t\n\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbNarrowCT_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtNarrowCT_NS_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbNC_B_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtNC_B_NS_Count\").meta.visible \u003d True\n\t\n\t\t\n\tif case7 \u003d\u003d1:\n\t\tself.getSibling(\"CmbNarrowCT_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtNarrowCT_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbNarrowCB_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtNarrowCB_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbNC_B_DG\").meta.visible \u003d False\n\t\tself.getSibling(\"TxtNC_B_DG_Count\").meta.visible \u003d False\n\t\tself.getSibling(\"CmbNarrowCT_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtNarrowCT_NS_Count\").meta.visible \u003d True\n\t\tself.getSibling(\"CmbNC_B_NS\").meta.visible \u003d True\n\t\tself.getSibling(\"TxtNC_B_NS_Count\").meta.visible \u003d True\n\t\n\t\t"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button",
+              "visible": false
+            },
+            "position": {
+              "height": 12.07,
+              "width": 38.16,
+              "x": 10.05,
+              "y": 41.95
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\t\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027,tagValue)\n\t\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\t\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027,0)\n\tself.getSibling(\"TxtHarvesterMark_DG_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "CmbHarvesterMark_DG"
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 380,
+              "y": 108.028
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FA1A"
+              },
+              "text": "",
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\t\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/harvester mark/reject\u0027,tagValue)\n\t\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/harvester mark/reject\u0027,0)\n\tself.getSibling(\"TxtHarvesterMark_RJ_Count\").refreshBinding(\"props.text\") \n\t\t\n\t\t"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "cmdBlows"
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 660,
+              "y": 106.677
+            },
+            "props": {
+              "text": ""
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\t\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027,tagValue)\n\t\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027,0)\n\n\tself.getSibling(\"TxtHarvesterMark_NS_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "CmbHarvesterMark_NS",
+              "visible": false
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 140,
+              "y": 107.028
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#FDEF36"
+              },
+              "text": "",
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "Label6"
+            },
+            "position": {
+              "height": 27.330000000000013,
+              "width": 63.91000000000008,
+              "x": 594.56,
+              "y": 105.25
+            },
+            "props": {
+              "text": "BLOWS",
+              "textStyle": {
+                "fontSize": 13,
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label59"
+            },
+            "position": {
+              "height": 26.389999999999986,
+              "width": 135.45,
+              "x": 14,
+              "y": 106.06
+            },
+            "props": {
+              "text": "HARVESTER MARK",
+              "textStyle": {
+                "fontSize": 13,
+                "textAlign": "start"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtHarvesterMark_DG_Count"
+            },
+            "position": {
+              "height": 17.900000000000006,
+              "width": 38.14999999999998,
+              "x": 447,
+              "y": 112
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/HM/G1S_face_ammount",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtHarvesterMark_NS_Count",
+              "visible": false
+            },
+            "position": {
+              "height": 17.89999999999999,
+              "width": 40.06999999999999,
+              "x": 207.32,
+              "y": 109.7
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/HM/NS_face_ammount",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtHarvesterMark_RJ_Count"
+            },
+            "position": {
+              "height": 19.789999999999992,
+              "width": 38.14999999999998,
+              "x": 727,
+              "y": 109.34
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/HM/reject",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027,tagValue)\n\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027,0)\n\tself.getSibling(\"TxtNarrowCT_DG_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "CmbNarrowCT_DG"
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 380,
+              "y": 141.38
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FA1A"
+              },
+              "text": "FACE",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027,tagValue)\n\n\t\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\n\tsystem.tag.write(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027,0)\n\tself.getSibling(\"TxtNarrowCT_NS_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "CmbNarrowCT_NS",
+              "visible": false
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 141.62,
+              "y": 141.4
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#FDEF36"
+              },
+              "text": "FACE",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027,tagValue)\n\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\t\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027,0)\n\tself.getSibling(\"TxtNC_B_DG_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "CmbNC_B_DG"
+            },
