@@ -1,33 +1,1003 @@
-,
-          {
+{
             "meta": {
-              "name": "CoordinateContainer_5"
+              "name": "TxtPutty_DG_Count"
             },
             "position": {
-              "height": 30.000000000000014,
-              "width": 762,
-              "y": 291.02
+              "height": 15.079999999999984,
+              "width": 38.14999999999998,
+              "x": 447,
+              "y": 295.35
             },
-            "props": {
-              "style": {
-                "backgroundColor": "#00FBFF40"
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/PW/G1S_face_ammount",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
               }
             },
-            "type": "ia.container.coord"
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
           },
           {
             "meta": {
-              "name": "CoordinateContainer_6"
+              "name": "TxtPutty_NS_Count",
+              "visible": false
             },
             "position": {
-              "height": 30.000000000000014,
-              "width": 762,
+              "height": 15.079999999999984,
+              "width": 40.06999999999999,
+              "x": 207.32,
+              "y": 295.35
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/PW/NS_face_ammount",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtPutty_RJ_Count"
+            },
+            "position": {
+              "height": 17.899999999999977,
+              "width": 38.14999999999998,
+              "x": 727,
+              "y": 294.99
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/PW/reject",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\t\t\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027,tagValue)\n\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027,0)\n\tself.getSibling(\"TxtDamage_DG_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "CmbDamage_DG"
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 380,
+              "y": 322.92
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FA1A"
+              },
+              "text": "",
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\t\t\t\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/fork line damage/reject\u0027,tagValue)\n\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/fork line damage/reject\u0027,0)\n\tself.getSibling(\"TxtDamage_RJ_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button24"
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 660,
+              "y": 321.57
+            },
+            "props": {
+              "text": ""
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "Label15"
+            },
+            "position": {
+              "height": 25.439999999999998,
+              "width": 133.54,
+              "x": 14,
+              "y": 322.06
+            },
+            "props": {
+              "text": "FORK / LINE DAMAGE",
+              "textStyle": {
+                "fontSize": 13,
+                "textAlign": "start"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtDamage_DG_Count"
+            },
+            "position": {
+              "height": 17.909999999999968,
+              "width": 38.14999999999998,
+              "x": 447,
+              "y": 325.68
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/FLD/G1S_face_ammount",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtDamage_RJ_Count"
+            },
+            "position": {
+              "height": 17.900000000000034,
+              "width": 38.14999999999998,
+              "x": 727,
+              "y": 325.33
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/FLD/reject",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtSand_RJ_Count"
+            },
+            "position": {
+              "height": 15.069999999999993,
+              "width": 38.14999999999998,
+              "x": 727,
+              "y": 358.43
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/ST/reject",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtSand_NS_Count",
+              "visible": false
+            },
+            "position": {
+              "height": 17.910000000000025,
+              "width": 40.06999999999999,
+              "x": 207.32,
+              "y": 358.78
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/ST/NS_face_ammount",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtSand_DG_Count",
+              "visible": false
+            },
+            "position": {
+              "height": 17.910000000000025,
+              "width": 38.14999999999998,
+              "x": 444.73,
+              "y": 358.78
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/ST/G1S_face_ammount",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label17"
+            },
+            "position": {
+              "height": 25.439999999999998,
+              "width": 107.78999999999999,
+              "x": 14,
+              "y": 355.16
+            },
+            "props": {
+              "text": "SAND THROUGH",
+              "textStyle": {
+                "fontSize": 13,
+                "textAlign": "start"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\t\t\t\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/sand through/reject\u0027,tagValue)\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/sand through/reject\u0027,0)\n\tself.getSibling(\"TxtSand_RJ_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button25"
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 660,
+              "y": 354.67
+            },
+            "props": {
+              "text": ""
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/sand through/NS_face\u0027,tagValue)\n\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/sand through/NS_face\u0027,0)\n\tself.getSibling(\"TxtSand_NS_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "CmbSand_NS",
+              "visible": false
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 141.28,
+              "y": 354.05
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#FDEF36"
+              },
+              "text": "",
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\t\t\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027,tagValue)\n\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027,0)\n\tself.getSibling(\"TxtSand_DG_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "CmbSand_DG",
+              "visible": false
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 376.67,
               "y": 354.02
             },
             "props": {
               "style": {
-                "backgroundColor": "#00FBFF40"
+                "backgroundColor": "#00FA1A"
+              },
+              "text": "",
+              "textStyle": {
+                "fontSize": 20
               }
             },
-            "type": "ia.container.coord"
-          }
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\t\t\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027,tagValue)\n\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027,0)\n\tself.getSibling(\"TxtWasteOF_DG_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "CmbWasteOF_DG"
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 380,
+              "y": 387.57
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FA1A"
+              },
+              "text": "FACE",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/waste on/NS_face\u0027,tagValue)\n\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/waste on/NS_face\u0027,0)\n\tself.getSibling(\"TxtWasteOF_NS_Count\").refreshBinding(\"props.text\")\t"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "CmbWasteOF_NS",
+              "visible": false
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 140,
+              "y": 386.6
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#FDEF36"
+              },
+              "text": "FACE",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\t\t\t\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value+1\t\t\t    \n\tsystem.tag.write(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027,tagValue)\n\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027,0)\n\tself.getSibling(\"TxtWasteOB_DG_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "CmbWasteOB_DG"
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 500,
+              "y": 386.57
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#00FA1A"
+              },
+              "text": "BACK",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\t\t\t\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/waste on/reject\u0027,tagValue)\n\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/waste on/reject\u0027,0)\n\tself.getSibling(\"TxtWasteOB_RJ_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Button29"
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 660,
+              "y": 387.23
+            },
+            "props": {
+              "text": ""
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "dom": {
+                "onClick": {
+                  "config": {
+                    "script": "\t\n\ttagValue \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value+1\n\tsystem.tag.write(\u0027[default]site_sander/falldown/waste on/NS_back\u0027,tagValue)\n\n\thm_ns_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/NS_face\u0027).value\n\tbc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_back\u0027).value\n\tbc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/G1S_P_face\u0027).value\n\tbc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_back\u0027).value\n\tbc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/NS_face\u0027).value\n\tbc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/broken covers/reject\u0027).value\n\tcm_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/G1S_P_face\u0027).value\n\tcm_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/NS_face\u0027).value\n\tcm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/chain marks/reject\u0027).value\n\tdela_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/delamination/reject\u0027).value\n\tfld_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/G1S_P_face\u0027).value\n\tfld_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/fork line damage/reject\u0027).value\n\tfvs_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/G1S_P_face\u0027).value\n\tfvs_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/NS_face\u0027).value\n\tfvs_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/face veneer split/reject\u0027).value\n\tgnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/G1S_P_face\u0027).value\n\tgnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/groove not centre/reject\u0027).value\n\thm_g1s_p_face \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/G1S_P_face\u0027).value\n\thm_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/harvester mark/reject\u0027).value\n\tlul_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/G1S_P_face\u0027).value\n\tlul_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/NS_face\u0027).value\n\tlul_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/lul faults/reject\u0027).value\n\tnc_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_back\u0027).value\n\tnc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/G1S_P_face\u0027).value\n\tnc_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_back\u0027).value\n\tnc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/NS_face\u0027).value\n\tnc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/narrow covers/reject\u0027).value\n\tother1_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/G1S_P_face\u0027).value\n\tother1_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/NS_face\u0027).value\n\tother1_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/other/reject\u0027).value\n\toutofsq_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/outofsq/reject\u0027).value\n\tputty_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/G1S_P_face\u0027).value\n\tputty_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/NS_face\u0027).value\n\tputty_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/putty work/reject\u0027).value\n\tsc_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/G1S_P_face\u0027).value\n\tsc_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/NS_face\u0027).value\n\tsc_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers/reject\u0027).value\n\tscl_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_back\u0027).value\n\tscl_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/G1S_P_face\u0027).value\n\tscl_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_back\u0027).value\n\tscl_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/NS_face\u0027).value\n\tscl_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers L/reject\u0027).value\n\tscw_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_face\u0027).value\n\tscw_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/G1S_P_back\u0027).value\n\tscw_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_back\u0027).value\n\tscw_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/NS_face\u0027).value\n\tscw_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/short covers W/reject\u0027).value\n\tst_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/G1S_P_face\u0027).value\n\tst_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/NS_face\u0027).value\n\tst_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/sand through/reject\u0027).value\n\ttt_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/G1S_P_face\u0027).value\n\ttt_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/NS_face\u0027).value\n\ttt_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/too thin/reject\u0027).value\n\twi_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/G1S_P_face\u0027).value\n\twi_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/NS_face\u0027).value\n\twi_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste indents/reject\u0027).value\n\two_g1s_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_back\u0027).value\n\two_g1s_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/G1S_P_face\u0027).value\n\two_ns_back  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_back\u0027).value\n\two_ns_face  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/NS_face\u0027).value\n\two_reject  \u003d system.tag.read(\u0027[default]site_sander/falldown/waste on/reject\u0027).value\n\t\n\t\n\t\n\tbarcode \u003d system.tag.read(\u0027[default]site_sander/falldown/barcode/barcode\u0027).value\n\tface \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/face\u0027).value\n\tgrade \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grade\u0027).value\n\tgrader \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/grader\u0027).value\n\tlength \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/length\u0027).value\n\tproduct \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/product\u0027).value\n\tshift \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/shift\u0027).value\n\tthickness \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/thickness\u0027).value\n\twidth \u003d  system.tag.read(\u0027[default]site_sander/falldown/product/width\u0027).value\n\tt_stamp \u003d system.date.format(system.date.addSeconds(system.date.now(),0), \"yyyy-MM-dd HH:mm:ss\")\n\trating \u003d system.tag.read(\u0027[default]site_sander/falldown/product/rating\u0027).value\n\tconstruction \u003d system.tag.read(\u0027[default]site_sander/falldown/product/construction\u0027).value \t\n\trun_number \u003d system.tag.read(\u0027[default]site_sander/falldown/product/run_number\u0027).value\n\t\n\tsystem.db.runPrepUpdate(\"INSERT INTO falldown_sander (  hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)\", [ hm_ns_face,barcode, face, grade, grader, length, product, shift, thickness, width, t_stamp, bc_g1s_back, bc_g1s_face, bc_ns_back, bc_ns_face, bc_reject, cm_g1s_face, cm_ns_face, cm_reject, dela_reject, fld_g1s_face, fld_reject, fvs_g1s_face, fvs_ns_face, fvs_reject, gnc_g1s_face, gnc_reject, hm_g1s_p_face, hm_reject, lul_g1s_face, lul_ns_face, lul_reject, nc_g1s_back, nc_g1s_face, nc_ns_back, nc_ns_face, nc_reject, other1_g1s_face, other1_ns_face, other1_reject, outofsq_reject, putty_g1s_face, putty_ns_face, putty_reject, sc_g1s_face, sc_ns_face, sc_reject, scl_g1s_back, scl_g1s_face, scl_ns_back, scl_ns_face, scl_reject, scw_g1s_face, scw_g1s_back, scw_ns_back, scw_ns_face, scw_reject, st_g1s_face, st_ns_face, st_reject, tt_g1s_face, tt_ns_face, tt_reject, wi_g1s_face, wi_ns_face, wi_reject, wo_g1s_back, wo_g1s_face, wo_ns_back, wo_ns_face, wo_reject, rating, construction,run_number], \"falldown_sander\")\n\n\t\n\tsystem.tag.write(\u0027[default]site_sander/falldown/waste on/NS_back\u0027,0)\n\tself.getSibling(\"TxtWasteOB_NS_Count\").refreshBinding(\"props.text\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "CmbWasteOB_NS",
+              "visible": false
+            },
+            "position": {
+              "height": 28,
+              "width": 65,
+              "x": 257.98,
+              "y": 386.57
+            },
+            "props": {
+              "style": {
+                "backgroundColor": "#FDEF36"
+              },
+              "text": "BACK",
+              "textStyle": {
+                "fontSize": 13
+              }
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "Label18"
+            },
+            "position": {
+              "height": 25.439999999999998,
+              "width": 107.78999999999999,
+              "x": 14,
+              "y": 387.7
+            },
+            "props": {
+              "text": "WASTE ON",
+              "textStyle": {
+                "fontSize": 13,
+                "textAlign": "start"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtWasteOB_NS_Count",
+              "visible": false
+            },
+            "position": {
+              "height": 17.900000000000034,
+              "width": 40.06,
+              "x": 324,
+              "y": 391.33
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/WO/NS_back_ammount",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtWasteOF_DG_Count"
+            },
+            "position": {
+              "height": 17.900000000000034,
+              "width": 38.14999999999998,
+              "x": 447,
+              "y": 391.33
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/WO/G1S_face_ammount",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtWasteOB_DG_Count"
+            },
+            "position": {
+              "height": 17.900000000000034,
+              "width": 40.059999999999945,
+              "x": 565,
+              "y": 391.33
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/WO/G1S_back_ammount",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtWasteOF_NS_Count",
+              "visible": false
+            },
+            "position": {
+              "height": 17.900000000000034,
+              "width": 40.06999999999999,
+              "x": 207.32,
+              "y": 391.33
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/WO/NS_face_ammount",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "sander_refreshing",
+                  "pageScope": false,
+                  "script": "\t# implement your handler here\n\tself.refreshBinding(\"props.text\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "TxtWasteOB_RJ_Count"
+            },
+            "position": {
+              "height": 17.899999999999977,
+              "width": 38.14999999999998,
+              "x": 727,
+              "y": 390.97
+            },
+            "propConfig": {
+              "props.text": {
+                "binding": {
+                  "config": {
+                    "parameters": {
+                      "construction": "{[default]site_sander/falldown/product/construction}",
+                      "grade": "{[default]site_sander/falldown/product/grade}",
+                      "product": "{[default]site_sander/falldown/product/product}",
+                      "rating": "{[default]site_sander/falldown/product/rating}",
+                      "run_number": "{[default]site_sander/falldown/product/run_number}",
+                      "shift": "{[default]site_sander/falldown/product/shift}",
+                      "thickness": "{[default]site_sander/falldown/product/thickness}"
+                    },
+                    "queryPath": "falldown_sander/WO/reject",
+                    "returnFormat": "scalar"
+                  },
+                  "type": "query"
+                }
+              }
+            },
+            "props": {
+              "textStyle": {
+                "fontSize": 20
+              }
+            },
