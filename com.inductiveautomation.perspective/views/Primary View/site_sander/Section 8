@@ -1,0 +1,31 @@
+,
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "height": 22.299999999999997,
+              "width": 139.26,
+              "x": 206.384,
+              "y": 26.1719
+            },
+            "props": {
+              "text": "DATE / TIME"
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "meta": {
+              "name": "Label_0"
+            },
+            "position": {
+              "height": 25.000000000000004,
+              "width": 68,
+              "x": 404.88,
+              "y": 24.34
+            },
+            "props": {
+              "text": "GRADER"
+            },
+            "type": "ia.display.label"
+          }
